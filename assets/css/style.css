@@ -1,34 +1,12 @@
-ul {
-    background-color: #fff;
+.main {
+    width: 75%;
+    margin: auto;
 }
 
-/* ul {
-    overflow: hidden;
-    background-color: #333;
-} */
+.inline {
+    display: inline-block;
+}
 
 nav {
-    border: 2px solid #ccc;
-}
-
-#nameBlock {
-    float: left;
-}
-
-.navLink {
     float: right;
-}
-
-
-nav::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-
-
-
-.main {
-    width: 70%;
-    margin: auto;
 }
