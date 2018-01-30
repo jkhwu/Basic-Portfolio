@@ -1,0 +1,34 @@
+ul {
+    background-color: #fff;
+}
+
+/* ul {
+    overflow: hidden;
+    background-color: #333;
+} */
+
+nav {
+    border: 2px solid #ccc;
+}
+
+#nameBlock {
+    float: left;
+}
+
+.navLink {
+    float: right;
+}
+
+
+nav::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+.main {
+    width: 70%;
+    margin: auto;
+}
