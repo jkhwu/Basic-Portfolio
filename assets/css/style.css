@@ -1,12 +1,33 @@
-.main {
+h1, h2, h3, h4, h5, h6 {
+    font-family: GT Eesti Display;
+}
+
+/* GT Eesti Display */
+
+.column {
     width: 75%;
     margin: auto;
 }
 
-.inline {
+h1, nav, li {
     display: inline-block;
 }
 
 nav {
     float: right;
+}
+
+li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    color: gray;
+    text-decoration:none;
+}
+
+#port {
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
 }
