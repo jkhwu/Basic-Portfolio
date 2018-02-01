@@ -65,10 +65,11 @@ a {
 section {
     background-color: #fff;
     width: 55%;
+    min-width: 500px;
     padding: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-right: 30px;
+    margin-right: 5%;
     float: left;
 }
 
@@ -79,8 +80,9 @@ p {
 
 aside {
     background-color: #fff;
-    width: 270px;
-    float: left;
+    width: 20%;
+    min-width: 270px;
+    float: right;
     padding: 30px;
     margin-top: 30px;
 }
@@ -103,7 +105,7 @@ footer p {
 }
 
 .contentspan {
-    width: 960px;
+    width: 75%;
     margin: 0 auto;
 }
 
