@@ -11,7 +11,7 @@ html, body {
 
 #header {
     background-color: #fff;
-    border-bottom: 4px solid #ccc;
+    border-bottom: 4px solid #c0cad1;
 }
 
 #body {
@@ -29,32 +29,32 @@ html, body {
     bottom:0;
     width:100%;
     height:80px;
-    background-color: #666;
-    border-top: 6px solid #4aaaa5;
+    background-color: #6f7984;
+    border-top: 6px solid #3a4ee9;
  }
 
 body {
     background-image: url("../images/shattered/shattered.png");
-    background-size: 10%;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777;
+    background-size: 20%;
+    font-family: 'Karla', sans-serif;
+    color: #6f7984;
 }
 
 h1, h2, h3 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
 h1 {
-    background-color: #4aaaa5;
+    background-color: #3a4ee9;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     display: inline-block;
-    padding: 20px;
+    padding: 20px 40px;
 }
 
 h2 {
-    color: #4aaaa5;
+    color: #282d3e;
     font-size: 30px;
     padding-bottom: 10px;
     padding-top: 5px;
@@ -62,7 +62,7 @@ h2 {
 
 
 h3 {
-    color: #4aaaa5;
+    color: #282d3e;
     font-size: 20px;
     padding-bottom: 10px;
 }
@@ -82,13 +82,13 @@ li {
 }
 
 a {
-    color: #777;
+    color: #6f7984;
     text-decoration:none;
 }
 
 #port {
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+    border-left: 1px solid #282d3e;
+    border-right: 1px solid #282d3e;
 }
 
 section {
@@ -97,7 +97,7 @@ section {
     min-width: 300px;
     padding: 30px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     float: left;
 }
 
@@ -119,7 +119,7 @@ aside {
   }
 
 footer p {
-    color: #ccc;
+    color: #c0cad1;
     font-size: 11px;
     position: absolute;
     top: 50%;
@@ -134,12 +134,12 @@ footer p {
 }
 
 .hrthick {
-    border: 1px solid #ccc;
+    border: 1px solid #c0cad1;
     margin-bottom: 20px;
 }
 
 .hrthin {
-    border: 0.5px solid #ccc;
+    border: 0.5px solid #c0cad1;
     margin-bottom: 20px;
 }
 
@@ -166,7 +166,7 @@ p {
 input[type=text], input[type=email], textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #c0cad1;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
@@ -175,18 +175,18 @@ input[type=text], input[type=email], textarea {
 }
 
 ::placeholder {
-	color: #ccc;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #c0cad1;
+    font-family: 'Karla', sans-serif;
     font-size: 12px;
 }
 
 label {
-	color: #777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #6f7984;
+    font-family: 'Karla', sans-serif;
 }
 
 input[type=submit] {
-    background-color: #4aaaa5;
+    background-color: #3a4ee9;
     color: white;
     padding: 10px 25px;
     border: none;
@@ -196,17 +196,15 @@ input[type=submit] {
 
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
     outline: none;
-    border: 1px solid #4aaaa5;
-    box-shadow: 0 0 3px #4aaaa5;
+    border: 1px solid #3a4ee9;
+    box-shadow: 0 0 3px #3a4ee9;
 }
 
 input[type=submit]:hover {
-    background-color: #228f89;
+    box-shadow: 0 0 12px #6f7984;
 }
 
 /* Portfolio Page */
-
-
 
 .photobox {
     width: 40%;
@@ -223,14 +221,14 @@ input[type=submit]:hover {
 
 .projlabel {
     position: absolute;
-    background-color: #4aaaa5;
+    background-color: #3a4ee9;
     color: #fff;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-family: 'Karla', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     position: absolute;
     bottom: 0px;
