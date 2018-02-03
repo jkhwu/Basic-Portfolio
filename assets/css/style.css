@@ -1,13 +1,44 @@
+/* All pages */
+
+html, body {
+    height:100%;
+ }
+
+ #container {
+    min-height:100%;
+    position:relative;
+ }
+
+#header {
+    background-color: #fff;
+    border-bottom: 4px solid #ccc;
+}
+
+#body {
+    padding:10px;
+    padding-bottom:80px;
+ }
+
+#body::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ #footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:80px;
+    background-color: #666;
+    border-top: 6px solid #4aaaa5;
+ }
+
 body {
     background-image: url("../images/shattered/shattered.png");
     background-size: 10%;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777;
-}
-
-header {
-    background-color: #fff;
-    border-bottom: 4px solid #ccc;
 }
 
 h1, h2, h3 {
@@ -18,7 +49,6 @@ h1, h2, h3 {
 h1 {
     background-color: #4aaaa5;
     color: white;
-    font-family: "Georgia", Times, 'Times New Roman', serif;
     font-size: 30px;
     display: inline-block;
     padding: 20px;
@@ -39,11 +69,11 @@ h3 {
 }
 
 nav {
-    background-color: white; /* temp */
-    float: right;
     display: inline-block;
-    height: 20px;
-    margin: 25px auto;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
 }
 
 li {
@@ -73,11 +103,6 @@ section {
     float: left;
 }
 
-p {
-    line-height: 2em;
-    margin-bottom: 10px;
-}
-
 aside {
     background-color: #fff;
     width: 20%;
@@ -85,28 +110,28 @@ aside {
     float: right;
     padding: 30px;
     margin-top: 30px;
+    margin-bottom: 60px;
 }
 
-footer {
-    background-color: #666;
-    border-top: 6px solid #4aaaa5;
-    width: 100%;
-    height: 80px;
+.aside::after {
+    content: "";
+    display: table;
     clear: both;
-    position: absolute;
-    bottom: 0;
-}
+  }
 
 footer p {
     color: #ccc;
     font-size: 11px;
-    text-align: center;
-    margin: 32px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .contentspan {
     width: 75%;
     margin: 0 auto;
+    position: relative;
 }
 
 .hrthick {
@@ -124,8 +149,58 @@ footer p {
     margin-right: 5px;
 }
 
+/* About Me page */
+
+p {
+    line-height: 2em;
+    margin-bottom: 10px;
+}
+
 #biophoto {
     width: 150px;
     margin-right: 20px;
     float: left;
+}
+
+/* Contact page */
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 14px;
+}
+
+::placeholder {
+	color: #ccc;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+label {
+	color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #4aaaa5;
+    box-shadow: 0 0 3px #4aaaa5;
+}
+
+input[type=submit]:hover {
+    background-color: #228f89;
 }
