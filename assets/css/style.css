@@ -55,6 +55,7 @@ h1 {
     letter-spacing: 0.06em;
     display: inline-block;
     padding: 20px 40px;
+    float: left;
 }
 
 h1:hover {
@@ -79,11 +80,8 @@ h3 {
 }
 
 nav {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
+    float: right;
+    padding: 24px;
 }
 
 li {
@@ -116,22 +114,22 @@ a:active {
 section {
     background-color: #fff;
     width: 55%;
-    min-width: 300px;
+    min-width: 150px;
     padding: 30px;
     margin-top: 30px;
     margin-bottom: 50px;
+    margin-right: 10%;
     float: left;
 }
 
 aside {
     background-color: #fff;
     width: 20%;
-    min-width: 200px;
-    float: right;
+    min-width: 150px;
+    float: left;
     padding: 30px;
     margin-top: 30px;
     margin-bottom: 60px;
-    margin-left: 5%;
 }
 
 .aside::after {
@@ -146,13 +144,19 @@ footer p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -50%);
 }
 
 .contentspan {
     width: 65%;
     margin: 0 auto;
     position: relative;
+}
+
+.contentspan::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .hrthick {
@@ -162,11 +166,15 @@ footer p {
 
 .hrthin {
     border: 0.5px solid #c0cad1;
-    margin-bottom: 20px;
 }
 
 .connect {
     width: 25%;
+    margin-top: 20px;
+}
+
+.connect-margin {
+    margin-right: 5%;
 }
 
 .connect:hover {
